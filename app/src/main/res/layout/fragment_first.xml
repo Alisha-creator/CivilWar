@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/con"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <ImageView
+        android:id="@+id/cap_america"
+        android:layout_width="101dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="128dp"
+        android:src="@drawable/captain_america"
+        app:layout_constraintBottom_toTopOf="@+id/btnCap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iron_man"
+        android:layout_width="101dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="128dp"
+        android:src="@drawable/ironman"
+        app:layout_constraintBottom_toTopOf="@+id/btnIron"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:padding="20dp"
+        android:text="Fight"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnIron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:padding="20dp"
+        android:text="Fight"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="captain America V/S Iron Man"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/war"
+        android:layout_width="3dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="364dp"
+        android:layout_marginEnd="364dp"
+        android:layout_marginBottom="235dp"
+        android:src="@drawable/war"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
